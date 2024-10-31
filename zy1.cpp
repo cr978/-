@@ -27,17 +27,6 @@ int main()
    {
       printf("%d,"sz[i]);
    }
-   
-  
-   
-   
-   
-
-
-
-
-
-
 
 return 0;
 }
