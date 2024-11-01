@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int dax(int a, int b) 
+{
+    while (b != 0) 
+   {
+        int hc = b;
+        b = a % b;
+        a = hc;
+    }
+    return a;
+}
+
+int cax(int a, int b) {
+    return (a * b) / dax(a, b);
+}
+
+int main() {
+    int c , d = 0;
+    printf("请输入两个数: ");
+    scanf("%d %d", &c, &d);
+    int g = dax(c, d);
+    int l = cax(c, d);
+    printf(" %d\n", g);
+    printf(" %d\n", l);
+    return 0;
+}
